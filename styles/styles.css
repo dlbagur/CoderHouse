@@ -109,7 +109,8 @@ p {
 }
 
 .encabezado-menu {
-    background-color: aliceblue;
+    background-color: burlywood;
+    /* background-color: cyan; */
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -140,7 +141,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .card-item {
@@ -210,7 +211,6 @@ p {
     "historia nuestros-vinos"
     "accesorios contacto"
 }
-
 
 .galeria-img {
     width: 100%;
