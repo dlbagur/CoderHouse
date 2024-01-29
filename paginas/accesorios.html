@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Link estilos propios -->    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Quienes somos</title>
+    <title>Accesorios</title>
 </head>
-
 <body>
     <header>
         <!-- Menú principal de navegación usando el NavBar de Bootstrap-->
@@ -47,18 +45,43 @@
         <br>
     </header>
 
-    <main class="container-fluid">
-        <section class="nosotros">
-            <figure><img src="../imagenes/QuienesSomos-Amigos-por-el-vino.jpeg" alt="La Vinoteca - Quienes somos">
-            </figure> 
-            <p>
-                Hace unos años, un grupo de amigos descubrieron la pasión por los vinos, durante todo este tiempo 
-                disfrutaban de visitas a bodegas, cursos para profundizar sus conocimientos, degustaciones de bodegas 
-                para descubrir nuevas sensaciones, desarrollando los sentidos. De igual manera fue creciendo el deseo 
-                de desarrollar un proyecto que permita a otras personas ampliar su conocimiento. creando desafíos a
-                descubrir, asi fue que nació este emprendimiento.
-            </p>
-        </section>          
+    <main>
+        <section class="card-container-accesorios">
+            <div>
+                <img class="img-tipo-accesorio" src="../imagenes/Accesorios.jpeg" alt="Accesorios" style="width:300px;height:200px;">
+                <lapso class="tipo-accesorio">Accesorios</lapso>
+            </div>
+        </section>
+        <section>
+            <div class="card-item-accesorio">
+                <p class="marca-producto">Decanter</p>
+                <p class="descripcion-producto descripcion-accesorio">Decantador de vidrio para vino tinto, capacidad 1,5lts.
+                </p>
+                <img class="img-producto" src="../imagenes/Accesorio-Decanter.jpg" alt="Decantador 1,5lts" style="width:180px;height:180px;">
+                <p class="precio-producto">$75.000</p>
+            </div>
+            <div class="card-item-accesorio">
+                <p class="marca-producto">Copas</p>
+                <p class="descripcion-producto descripcion-accesorio">Copas de cristal para vino tinto blanco, blanco, espumante, agua y degustación. Juego de 6 copas de cada tipo.
+                </p>
+                <img class="img-producto" src="../imagenes/Accesorio-Copas.jpeg" alt="Copas de Cristal" style="width:200px;height:100px;">
+                <p class="precio-producto">$210.000</p>
+            </div>
+            <div class="card-item-accesorio">
+                <p class="marca-producto">Sacacorchos</p>
+                <p class="descripcion-producto descripcion-accesorio">Sacacorchos de dos tiempos.
+                </p>
+                <img class="img-producto" src="../imagenes/Accesorio-Sacacorchos.jpeg" alt="Sacacorchos" style="width:100px;height:100px;">
+                <p class="precio-producto">$15.000</p>
+            </div>
+            <div class="card-item-accesorio">
+                <p class="marca-producto">Enfriador</p>
+                <p class="descripcion-producto descripcion-accesorio">Refrigerante para botellas.
+                </p>
+                <img class="img-producto" src="../imagenes/Accesorio-Enfriador.jpeg" alt="Enfriador de botellas" style="width:120px;height:200px;">
+                <p class="precio-producto">$35.000</p>
+            </div>
+        </section>
     </main>
 
     <footer class="pie-grid-container container-fluid pie-de-pagina">
@@ -72,6 +95,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    
 </body>
 </html>

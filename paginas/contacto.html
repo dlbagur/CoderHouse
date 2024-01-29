@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link estilos propios -->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Formulario Registro</title>
 </head>
 <body>
     <header>
+        <!-- Menú principal de navegación usando el NavBar de Bootstrap-->
         <nav class="navbar navbar-expand-lg encabezado-menu">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="#">
@@ -21,20 +24,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item articulos">
-                            <a class="nav-link menu-propio" href="../index.html">Home</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link active menu-propio" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item articulos">
-                            <a class="nav-link menu-propio" href="../paginas/nosotros.html">Quienes somos</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link menu-propio" href="nosotros.html">Quienes somos</a>
                         </li>
-                        <li class="nav-item articulos">
-                            <a class="nav-link menu-propio" href="../paginas/vinos.html">Nuestros vinos</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link menu-propio" href="vinos.html">Nuestros vinos</a>
                         </li>
-                        <li class="nav-item articulos">
-                            <a class="nav-link menu-propio" href="../paginas/productos.html">Accesorios</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link menu-propio" href="accesorios.html">Accesorios</a>
                         </li>
-                        <li class="nav-item articulos">
-                            <a class="nav-link active menu-propio" href="../paginas/contacto.html">Contacto</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link menu-propio" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -48,10 +51,10 @@
             <h4>Formulario Registro</h4>
             <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos">
             <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus nombres">
-            <input class="controls" type="number" name="Celular Area" id="Celular-area" placeholder="1234">
-            <input class="controls" type="number" name="Celular Número" id="Celular-nro" placeholder="12345678">
+            <input class="controls" type="number" name="Código de Area" id="Celular-area" placeholder="Código área">
+            <input class="controls" type="number" name="Celular Número" id="Celular-nro" placeholder="Celular número">
             <input class="controls" type="text" name="email" id="email" placeholder="Ingrese su e-mail">
-            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones.</a></p>
             <input class="boton" type="submit" value="Registrar">
         </section>
     </main>
@@ -63,6 +66,7 @@
         <article class="footer-h4 mail">e-mail: contacto@VinotecaArgentina.com.ar</article>
     </footer>
 
+    <!-- script de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
