@@ -1,0 +1,29 @@
+/* INICIALIZACION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    background-color: deepskyblue;
+    color: white;
+    font-size: map-get($font-medidas , xl);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    font-family: whisper;
+    background-color: antiquewhite;
+    color: red;
+    font-size: map-get($font-medidas , xxxl);
+    font-weight: bold;
+}
+h3 {
+    display: inline-block;
+    font-family: Ephesis, 'Arial Narrow', Arial, sans-serif;
+    font-size: map-get($font-medidas , xl);
+    color: black;
+    font-weight:500;
+}
+p {
+    font-family:whisper;
+}

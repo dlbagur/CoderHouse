@@ -3,45 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lato:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
-/* INICIALIZACION */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-// MAP //
-$font-medidas: (
-    xxxl: 50px,
-    xxl: 35px,
-    xl: 30px,
-    l: 25px,
-    m: 20px,
-    s: 15px,
-    xs: 10px,
-);
-h1 {
-    background-color: deepskyblue;
-    color: white;
-    font-size: map-get($font-medidas , xl);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h2 {
-    font-family: whisper;
-    background-color: antiquewhite;
-    color: red;
-    font-size: map-get($font-medidas , xxxl);
-    font-weight: bold;
-}
-h3 {
-    display: inline-block;
-    font-family: Ephesis, 'Arial Narrow', Arial, sans-serif;
-    font-size: map-get($font-medidas , xl);
-    color: black;
-    font-weight:500;
-}
-p {
-    font-family:whisper;
-}
+/* Utilities */
+@import "./parciales/utilities/maps";
+/*  INICIALIZACION */
+@import './parciales/base/reset';
 
 /* Clases */
 /* MENU */
