@@ -9,7 +9,7 @@
 @import './parciales/base/reset';
 
 /* Clases */
-/* MENU */
+/* NavBar */
 .menu-propio {
     color: brown;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -52,7 +52,7 @@
 .galeria-img {
     width: 80%;
     height: 300px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     border: 1px solid black;
 }
 
@@ -302,6 +302,11 @@
 /* MEDIA */
 @media (max-width: 1600px) {
     /* Vinos */
+    .galeria-img {
+        width: 80%;
+        height: 300px;
+        grid-template-columns: repeat(2,auto);
+    }
     .card-container-vino {
         width: 100%;
         padding: 30px 10px 10px 10px;
@@ -341,13 +346,10 @@
         align-self: auto;
     }
     .galeria-img {
-        width: auto;
-        height: auto;
-        grid-template-columns: repeat(2,fr);
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(2,auto);
     }
-    // .galeria-img {
-    //     grid-template-columns: repeat(1,fr);
-    // } 
     /* Vinos */
     .card-item-vino {
         width: 100%;
@@ -399,8 +401,8 @@
 
     /* Imagenes Home */
     .galeria-ppal {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
         grid-template-areas: 
         "historia" 
         "nuestros-vinos"
@@ -408,7 +410,9 @@
         "contacto";
     }
     .galeria-img {
-       grid-template-columns: repeat(1,fr);
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(1,fr);
     } 
     /* Nosotros */
     .nosotros {
@@ -477,7 +481,33 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+    .galeria-ppal {
+        margin: 5px;
+        grid-template-columns: 100%;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: auto;
+        padding: 20px 30px 20px .30px;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "historia"
+        "nuestros-vinos"
+        "accesorios"
+        "contacto";    
+    }
+    .galeria-img {
+       grid-template-columns: repeat(1,fr);
+    }
+
+
+
+
+
+
+
+
+
+
     /* Nosotros */
     .nosotros p{
         font-size: map-get($font-medidas , m);
