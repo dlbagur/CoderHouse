@@ -339,7 +339,7 @@
 @media (max-width: 1200px) {
     /* Bienvenida */
     h2 {
-        font-size: map-get($font-medidas , xl);
+        font-size: map-get($font-medidas , xxl);
     }
     h3 {
         font-size: map-get($font-medidas , xl);
@@ -389,10 +389,10 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     /* Bienvenida */
     h2 {
-        font-size: map-get($font-medidas , l);
+        font-size: map-get($font-medidas , xl);
     }
     h3 {
         font-size: 22px;
@@ -414,6 +414,17 @@
         height: 300px;
         grid-template-columns: repeat(1,fr);
     } 
+}
+
+@media (max-width: 800px) {
+    /* Bienvenida */
+    h2 {
+        font-size: map-get($font-medidas , xl);
+    }
+    h3 {
+        font-size: 22px;
+        align-self: auto;
+    }
     /* Nosotros */
     .nosotros {
         flex-direction: column;

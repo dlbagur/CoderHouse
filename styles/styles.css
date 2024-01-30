@@ -366,7 +366,7 @@ p {
 @media (max-width: 1200px) {
   /* Bienvenida */
   h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   h3 {
     font-size: 30px;
@@ -415,10 +415,10 @@ p {
     padding: 10px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   /* Bienvenida */
   h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
   h3 {
     font-size: 22px;
@@ -434,6 +434,16 @@ p {
     width: 300px;
     height: 300px;
     grid-template-columns: repeat(1, fr);
+  }
+}
+@media (max-width: 800px) {
+  /* Bienvenida */
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+    align-self: auto;
   }
   /* Nosotros */
   .nosotros {
