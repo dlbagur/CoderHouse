@@ -23,7 +23,7 @@ h2 {
   font-family: whisper;
   background-color: antiquewhite;
   color: red;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -56,15 +56,22 @@ p {
 /* Imagenes y texto del Home */
 .galeria-ppal {
   width: 100%;
-  max-width: 1200px;
   margin: 10px;
   display: grid;
   grid-template-columns: repeat 2, 1fr;
   grid-template-rows: 250px;
-  padding: 60px 30px 20px 60px;
+  padding: 120px 30px 20px 60px;
   align-items: center;
   grid-gap: 30px;
   grid-template-areas: "historia nuestros-vinos" "accesorios contacto";
+}
+
+.background-img-home {
+  background-image: url("../imagenes/Vinedos.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .galeria-item {
@@ -84,6 +91,9 @@ p {
 .galeria-titulo {
   width: 100%;
   height: 100px;
+  align-items: center;
+  color: red;
+  font-weight: bold;
 }
 
 /* Asignación de áreas del grid del Home*/
@@ -353,8 +363,13 @@ p {
     font-size: 30px;
   }
   h3 {
-    font-size: 25px;
+    font-size: 30px;
     align-self: auto;
+  }
+  .galeria-img {
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(2, fr);
   }
   /* Vinos */
   .card-item-vino, .card-item-accesorio {
@@ -410,8 +425,6 @@ p {
     grid-template-areas: "historia" "nuestros-vinos" "accesorios" "contacto";
   }
   .galeria-img {
-    width: auto;
-    height: auto;
     grid-template-columns: repeat(1, fr);
   }
   /* Nosotros */
