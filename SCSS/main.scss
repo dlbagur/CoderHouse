@@ -301,6 +301,14 @@
 
 /* MEDIA */
 @media (max-width: 1600px) {
+    /* Bienvenida */
+    h2 {
+        font-size: map-get($font-medidas , xxl);
+    }
+    h3 {
+        font-size: map-get($font-medidas , xl);
+        align-self: auto;
+    }
     /* Vinos */
     .galeria-img {
         width: 80%;
@@ -398,7 +406,6 @@
         font-size: 22px;
         align-self: auto;
     }
-
     /* Imagenes Home */
     .galeria-ppal {
         grid-template-columns: 100%;

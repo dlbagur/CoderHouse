@@ -329,6 +329,14 @@ p {
 /* FIN FORMULARIO */
 /* MEDIA */
 @media (max-width: 1600px) {
+  /* Bienvenida */
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+    align-self: auto;
+  }
   /* Vinos */
   .galeria-img {
     width: 80%;
