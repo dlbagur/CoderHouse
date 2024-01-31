@@ -1,0 +1,30 @@
+/* Media */
+@media (max-width: 900px) {
+    /* Bienvenida */
+    h2 {
+        font-size: map-get($font-medidas , xl);
+    }
+    h3 {
+        font-size: 22px;
+        align-self: auto;
+    }
+
+    /* Imagenes Home */
+    .galeria-ppal {
+        width: auto;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,100%);
+        grid-template-areas:
+        "historia"
+        "nuestros-vinos"
+        "accesorios"
+        "contacto";
+    }
+    .galeria-img {
+        width: 300px;
+        height: 300px;
+        // grid-template-columns: repeat(1,fr);
+    }
+}

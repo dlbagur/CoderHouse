@@ -1,0 +1,76 @@
+/* MEDIA */
+@media (max-width: 800px) {
+    /* Bienvenida */
+    h2 {
+        font-size: map-get($font-medidas , xl);
+    }
+    h3 {
+        font-size: 22px;
+        align-self: auto;
+    }
+    /* Nosotros */
+    .nosotros {
+        flex-direction: column;
+        p {
+            font-size: map-get($font-medidas , l);
+        }
+    }
+    /* Vinos */
+    .card-container-vino {
+        margin: 1px;
+        padding: 5px;
+    }
+    .card-item-vino {
+        margin: 5px;
+        grid-template-columns: 30% 70% 30% 70%;
+        // grid-template-rows: 200px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "marca-producto descripcion-producto" 
+        "img-producto precio-producto";
+        border: solid 1px black;
+    }
+    .img-tipo-vino {
+        width: 10%;
+    }
+    .tipo-vino {
+        font-size: map-get($font-medidas , m);
+        padding: 10px;
+    }
+    .marca-producto {
+        font-size: map-get($font-medidas , m);
+    }
+    .descripcion-producto {
+        font-size: 12px;
+    }
+    .img-producto {
+        width: 60%;
+    }
+    .precio-producto {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .descripcion-producto {
+        font-size: map-get($font-medidas , m);
+    }
+    .card-item-accesorio {
+        margin: 5px;
+        grid-template-columns: 50% 50%;
+        border: solid 1px black;
+        grid-template-rows: 150px;
+        grid-template-areas:
+        "marca-producto descripcion-producto" 
+        "img-producto precio-producto";
+    }
+    .descripcion-accesorio {
+        font-size: map-get($font-medidas , l);
+    }
+    .pie-grid-container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "empresa"
+            "celular"
+            "mail"
+            "copy-right";
+    }
+}

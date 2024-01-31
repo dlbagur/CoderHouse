@@ -1,0 +1,53 @@
+/* MEDIA */
+@media (max-width: 1200px) {
+    /* Bienvenida */
+    h2 {
+        font-size: map-get($font-medidas , xxl);
+    }
+    h3 {
+        font-size: map-get($font-medidas , xl);
+        align-self: auto;
+    }
+    .galeria-img {
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(2,auto);
+    }
+    /* Vinos */
+    .card-item-vino {
+        width: 100%;
+        margin: 10px;
+        grid-template-columns: 15% 50% 25% 10%;
+        grid-template-rows: auto;
+        padding: 5px;
+        grid-gap: 2px;
+    }
+    .marca-producto {
+        font-weight: bold;
+        font-size: 28px;
+        padding: 10px;
+    }
+    .descripcion-producto {
+        font-size: 26px;
+        padding: 10px;
+    }
+    .img-producto {
+        width: 100%;
+    }
+    .precio-producto {
+        font-size: 28px;
+    }
+    /* Accesorios */
+    .card-item-accesorio {
+        width: 100%;
+        margin: 10px;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-rows: auto;
+        padding: 5px;
+        grid-gap: 2px;
+    }
+    .descripcion-accesorio {
+        font-size: map-get($font-medidas , xl);
+        padding: 10px;
+    }
+}

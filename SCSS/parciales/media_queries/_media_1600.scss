@@ -1,0 +1,36 @@
+/* MEDIA */
+@media (max-width: 1600px) {
+    /* Vinos */
+    .galeria-img {
+        width: 80%;
+        height: 300px;
+        grid-template-columns: repeat(2,auto);
+    }
+    .card-container-vino {
+        width: 100%;
+        padding: 30px 10px 10px 10px;
+    }
+    .card-item-vino {
+        width: 100%;
+        margin: 10px;
+        grid-template-columns: 20% 60% 10% 10%;
+        grid-template-rows: auto;
+        padding: 5px;
+        grid-gap: 2px;
+    }
+    .marca-producto {
+        font-weight: bold;
+        font-size: map-get($font-medidas , xl);
+        padding: 10px;
+    }
+    .descripcion-producto {
+        font-size: 28px;
+        padding: 10px;
+    }
+    .img-producto {
+        width: 100%;
+    }
+    .precio-producto {
+        font-size: map-get($font-medidas , xl);
+    }
+}
