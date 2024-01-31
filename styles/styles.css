@@ -9,15 +9,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
+/* Estilo del "Bienvenidos" del Index*/
 h1 {
   background-color: antiquewhite;
-  color: red;
-  font-size: 35px;
+  font-size: 50px;
   font-family: whisper;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: red;
 }
 
 h2 {
@@ -121,15 +126,6 @@ p {
   display: flex;
   flex-direction: row;
   padding: 10px;
-}
-
-/* Estilo del "Bienvenidos" del Index*/
-.centrado {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 20px;
 }
 
 /* Quienes somos */
@@ -330,6 +326,9 @@ p {
 /* MEDIA */
 @media (max-width: 1600px) {
   /* Bienvenida */
+  h1 {
+    font-size: 50px;
+  }
   h2 {
     font-size: 35px;
   }
@@ -373,6 +372,9 @@ p {
 }
 @media (max-width: 1200px) {
   /* Bienvenida */
+  h1 {
+    font-size: 50px;
+  }
   h2 {
     font-size: 35px;
   }
@@ -425,6 +427,9 @@ p {
 }
 @media (max-width: 960px) {
   /* Bienvenida */
+  h1 {
+    font-size: 35px;
+  }
   h2 {
     font-size: 30px;
   }
@@ -446,6 +451,9 @@ p {
 }
 @media (max-width: 800px) {
   /* Bienvenida */
+  h1 {
+    font-size: 35px;
+  }
   h2 {
     font-size: 30px;
   }
@@ -511,6 +519,12 @@ p {
   }
 }
 @media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
   .galeria-ppal {
     margin: 5px;
     grid-template-columns: 100%;

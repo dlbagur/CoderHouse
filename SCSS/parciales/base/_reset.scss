@@ -2,15 +2,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+/* Estilo del "Bienvenidos" del Index*/
 h1 {
     background-color: antiquewhite;
-    color: red;
-    font-size: map-get($font-medidas , xxl);
+    font-size: map-get($font-medidas , xxxl);
     font-family: whisper;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: red;
 }
+
 h2 {
     display: inline-block;
     font-family: Ephesis, 'Arial Narrow', Arial, sans-serif;
