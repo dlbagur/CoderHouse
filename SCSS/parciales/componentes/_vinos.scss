@@ -1,0 +1,73 @@
+/* Grilla de Vinos y Accesorios */
+/* Vinos Tipos */
+.card-container-vino {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img-tipo-vino {
+    border-radius: 50%;
+    width: 100%;
+    border: solid 1px black;
+}
+.tipo-vino {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    font-weight: bold;
+    font-size: map-get($font-medidas , xl);
+    padding: 10px;
+}
+
+/* Vinos Detalle */
+.card-item-vino {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 200px 650px 200px 100px;
+    grid-template-rows: 250px;
+    padding: 10px;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "marca-producto descripcion-producto img-producto precio-producto"
+}
+.marca-producto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    font-weight: bold;
+    font-size: map-get($font-medidas , l);
+    padding: 10px;
+    grid-area: marca-producto;
+}
+.descripcion-producto {
+    font-family: whisper;
+    font-size: map-get($font-medidas , l);
+    grid-area: descripcion-producto;
+    &:hover {
+        transform: scale(1.2);
+        font-weight: 600;
+    }
+}
+.img-producto {
+    width: 100%;
+    grid-area: img-producto;
+    align-content: center;
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+.precio-producto {
+    font-size: map-get($font-medidas , l);
+    font-weight: bold;
+    align-content: center;        
+    grid-area: precio-producto;
+    &:hover {
+        transform: scale(1.2);
+    }
+}

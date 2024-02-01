@@ -1,0 +1,59 @@
+/* FORMULARIO DE CONTACTO */
+.form-registro {
+    width: 400px;
+    background: #c05c1a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 7px 13px 37px #000;
+
+    h4 {
+        font-size: map-get($font-medidas , m);
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+        height: 40px;
+        text-align: center;
+        font-size: map-get($font-medidas , s);
+        line-height: 40px;
+     }
+     
+     a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }    
+    }
+
+    .boton {
+        width: 100%;
+        background: #470303;;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+
+    .datos {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid rgb(119, 126, 228);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        color: white;
+    }
+}
+/* FIN FORMULARIO */ 

@@ -23,7 +23,6 @@
     .card-item-vino {
         margin: 5px;
         grid-template-columns: 30% 70% 30% 70%;
-        // grid-template-rows: 200px;
         grid-template-rows: auto;
         grid-template-areas: 
         "marca-producto descripcion-producto" 

@@ -1,0 +1,14 @@
+/* Quienes somos */
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+
+    p {
+        display: inline-block;
+        font-family: whisper;
+        font-size: map-get($font-medidas , xl);
+    }
+}

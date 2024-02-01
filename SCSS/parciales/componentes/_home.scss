@@ -1,0 +1,77 @@
+/* NavBar */
+.menu-propio {
+    color: brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.item-menu:hover {
+    color: red;
+    font-size: map-get($font-medidas , m);
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* Imagenes y texto del Home */
+.galeria-ppal {
+    width: 100%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 250px;
+    padding: 120px 30px 20px 60px;
+    align-items: center;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "historia nuestros-vinos"
+    "accesorios contacto";
+}
+.background-img-home {
+    background-image: url("../imagenes/Vinedos.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.galeria-item {
+    position: relative;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+.galeria-img {
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.galeria-titulo {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* Asignación de áreas del grid del Home*/
+.historia {
+    grid-area: historia;
+}
+.nuestros-vinos {
+    grid-area: nuestros-vinos;
+}
+.accesorios {
+    grid-area: accesorios;
+}
+.contacto {
+    grid-area: contacto;
+}
+/* FIN Imagenes y texto del Home */
+
+/* Estilos para el NavBar */
+.encabezado-menu {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}

@@ -1,6 +1,9 @@
 /* MEDIA */
 @media (max-width: 1200px) {
     /* Bienvenida */
+    h1 {
+        font-size: map-get($font-medidas , xxxl);        
+    }
     h2 {
         font-size: map-get($font-medidas , xxl);
     }
@@ -17,7 +20,7 @@
     .card-item-vino {
         width: 100%;
         margin: 10px;
-        grid-template-columns: 15% 50% 25% 10%;
+        grid-template-columns: 13% 50% 25% 8%;
         grid-template-rows: auto;
         padding: 5px;
         grid-gap: 2px;

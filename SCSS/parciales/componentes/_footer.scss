@@ -1,0 +1,35 @@
+/* ESTILOS FOOTER */
+.footer-h4 {
+    font-size: map-get($font-medidas , s);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-h5 {
+    font-size: map-get($font-medidas , xs);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Grilla del Footer */
+.pie-grid-container {
+    background-color: bisque;
+    color: brown;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 
+        "empresa copy-right"
+        "celular celular"
+        "mail mail"
+}
+.empresa {
+    grid-area: empresa;
+}
+.copy-right {
+    grid-area: copy-right;
+}
+.celular {
+    grid-area: celular;
+}
+.mail {
+    grid-area: mail;
+}

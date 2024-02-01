@@ -1,0 +1,17 @@
+/* ACCESORIOS */
+.card-container-accesorios {
+    @extend .card-container-vino;
+}
+.card-item-accesorio {
+    @extend .card-item-vino;
+    grid-template-columns: 200px 300px 300px 200px;
+}
+.tipo-accesorio {
+    @extend .tipo-vino;
+}
+.img-tipo-accesorio {
+    @extend .img-tipo-vino;
+}
+.descripcion-accesorio {
+    font-size: map-get($font-medidas , xl);
+}
