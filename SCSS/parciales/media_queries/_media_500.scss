@@ -1,9 +1,6 @@
 /* MEDIA */
 @media (max-width: 500px) {
-    .galeria-img {
-        width: 200px;
-        height: 200px;
-    }
+
     /* Nosotros */
     .nosotros p{
         font-size: map-get($font-medidas , m);

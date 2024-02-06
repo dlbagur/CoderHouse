@@ -10,9 +10,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+/* Estilos para el NavBar */
+.encabezado-menu {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
 /* Imagenes y texto del Home */
 .galeria-ppal {
-    width: 100%;
+    width: 80%;
     margin: 10px;
     display: grid;
     grid-template-columns: repeat (2, 1fr);
@@ -39,9 +48,7 @@
 }
 
 .galeria-img {
-    width: 80%;
-    height: 300px;
-    padding: 20px;
+    padding: 5px;
     border: 1px solid black;
 }
 
@@ -67,11 +74,3 @@
     grid-area: contacto;
 }
 /* FIN Imagenes y texto del Home */
-
-/* Estilos para el NavBar */
-.encabezado-menu {
-    background-color: burlywood;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
