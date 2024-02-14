@@ -11,9 +11,11 @@
         font-size: map-get($font-medidas , xl);
         align-self: auto;
     }
-    .galeria-img {
-        width: 300px;
-        height: 300px;
+    /* Imagenes Home */
+    .galeria-item {
+        .galeria-img {
+            @include medidas(300px, 300px)
+        }
         grid-template-columns: repeat(2,auto);
     }
     /* Vinos */

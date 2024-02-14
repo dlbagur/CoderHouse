@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Lato:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
 /* Utilities */
+/* Mixin Medidas */
 /*  INICIALIZACION */
 /* INICIALIZACION */
 * {
@@ -20,7 +21,6 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
   border-radius: 20px;
   color: red;
 }
@@ -343,6 +343,14 @@ p {
     font-size: 30px;
     align-self: auto;
   }
+  /* Imagenes Home */
+  .galeria-item {
+    grid-template-columns: repeat(2, auto);
+  }
+  .galeria-item .galeria-img {
+    width: 300px;
+    height: 300px;
+  }
   /* Vinos */
   .galeria-img {
     width: 80%;
@@ -403,10 +411,13 @@ p {
     font-size: 30px;
     align-self: auto;
   }
-  .galeria-img {
+  /* Imagenes Home */
+  .galeria-item {
+    grid-template-columns: repeat(2, auto);
+  }
+  .galeria-item .galeria-img {
     width: 300px;
     height: 300px;
-    grid-template-columns: repeat(2, auto);
   }
   /* Vinos */
   .card-item-vino, .card-item-accesorio {
@@ -465,7 +476,7 @@ p {
     grid-template-rows: repeat(4, 300px);
     grid-template-areas: "historia" "nuestros-vinos" "accesorios" "contacto";
   }
-  .galeria-img {
+  .galeria-item .galeria-img {
     width: 300px;
     height: 300px;
   }
@@ -563,6 +574,19 @@ p {
 }
 /* MEDIA */
 @media (max-width: 500px) {
+  /* Imagenes Home */
+  .galeria-ppal {
+    width: auto;
+    grid-template-columns: repeat 1, 1fr;
+    grid-template-rows: auto;
+    padding: 2px;
+    align-items: center;
+    grid-gap: 2px;
+  }
+  .galeria-item .galeria-img {
+    width: 300px;
+    height: 300px;
+  }
   /* Nosotros */
   .nosotros p {
     font-size: 20px;
@@ -614,6 +638,29 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "empresa" "celular" "mail" "copy-right";
   }
+  .form-registro {
+    width: 280px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form-registro h4 {
+    font-size: 20px;
+  }
+  .form-registro p {
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .form-registro .boton {
+    padding: 10px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  .form-registro .datos {
+    font-size: 15px;
+  }
+  /* FIN FORMULARIO */
 }
 
 /*# sourceMappingURL=styles.css.map */

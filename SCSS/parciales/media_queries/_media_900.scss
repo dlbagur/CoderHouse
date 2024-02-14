@@ -22,10 +22,11 @@
         "accesorios"
         "contacto";
     }
-    .galeria-img {
-        width: 300px;
-        height: 300px;
-    }
+    .galeria-item {
+        .galeria-img {
+            @include medidas(300px, 300px)
+        }
+   }
     .marca-producto {
         font-weight: bold;
         font-size: map-get($font-medidas , l);

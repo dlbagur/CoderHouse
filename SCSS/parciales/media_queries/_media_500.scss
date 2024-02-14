@@ -1,5 +1,20 @@
 /* MEDIA */
 @media (max-width: 500px) {
+    /* Imagenes Home */
+    .galeria-ppal {
+        width: auto;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: auto;
+        padding: 2px;
+        align-items: center;
+        grid-gap: 2px;
+    }
+   .galeria-item {
+        .galeria-img {
+            width: 300px;
+            height: 300px;
+        }
+   }
 
     /* Nosotros */
     .nosotros p{
@@ -24,9 +39,10 @@
         width: auto;
     }
     .tipo-vino {
-        font-size: map-get($font-medidas , m);    }
+        font-size: map-get($font-medidas , m);    
+    }
     .marca-producto {
-        font-size: 18px;
+        font-size: map-get($font-medidas , sm);
     }
     .descripcion-producto {
         font-size: 16px;
@@ -60,4 +76,28 @@
             "mail"
             "copy-right";
     }
+    .form-registro {
+        width: 280px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h4 {
+            font-size: map-get($font-medidas , m);
+        }
+        p {
+            height: 30px;
+            font-size: map-get($font-medidas , s);
+            line-height: 20px;
+         }
+        .boton {
+            padding: 10px;
+            margin: 16px 0;
+            font-size: map-get($font-medidas , s);
+        }
+        .datos {
+            font-size: map-get($font-medidas , s);
+        }
+    }
+    /* FIN FORMULARIO */ 
+    
 }

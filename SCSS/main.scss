@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 /* Utilities */
+@import "./parciales/utilities/mixin";
 @import "./parciales/utilities/maps";
 /*  INICIALIZACION */
 @import './parciales/base/reset';
@@ -25,4 +26,3 @@
 @import "./parciales/media_queries/media_900";
 @import "./parciales/media_queries/media_800";
 @import "./parciales/media_queries/media_500";
-
