@@ -27,7 +27,6 @@
         grid-template-areas: 
         "marca-producto descripcion-producto" 
         "img-producto precio-producto";
-        border: solid 1px black;
     }
     .img-tipo-vino {
         width: 10%;
@@ -55,7 +54,6 @@
     .card-item-accesorio {
         margin: 5px;
         grid-template-columns: 50% 50%;
-        border: solid 1px black;
         grid-template-rows: auto;
         grid-template-areas:
         "marca-producto descripcion-producto" 

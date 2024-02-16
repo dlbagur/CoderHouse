@@ -4,7 +4,7 @@
 }
 .card-item-accesorio {
     @extend .card-item-vino;
-    grid-template-columns: 200px 300px 300px 200px;
+    grid-template-columns: 400px 400px 400px 400px;
 }
 .tipo-accesorio {
     @extend .tipo-vino;

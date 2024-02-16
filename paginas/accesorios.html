@@ -8,6 +8,8 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Animatee CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link estilos propios -->    <link rel="stylesheet" href="../styles/styles.css">
     <title>La Vinoteca - Accesorios para vinos</title>
 </head>
@@ -49,7 +51,7 @@
     <main>
         <h1 class="animate__animated animate__rollIn">Accesorios!</h1>
         <br>        
-        <section class="card-container-accesorios">
+        <section class="card-container-accesorios animate__animated animate__backInDown">
             <div>
                 <img class="img-tipo-accesorio" src="../imagenes/Accesorios.jpeg" alt="Accesorios" style="width:300px;height:200px;">
                 <lapso class="tipo-accesorio">Accesorios</lapso>
@@ -57,32 +59,32 @@
         </section>
         <section>
             <div class="card-item-accesorio">
-                <p class="marca-producto">Decanter</p>
+                <p class="marca-producto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Decanter</p>
                 <p class="descripcion-producto descripcion-accesorio">Decantador de vidrio para vino tinto, capacidad 1,5lts.
                 </p>
                 <img class="img-producto" src="../imagenes/Accesorio-Decanter.jpg" alt="Decantador 1,5lts" style="width:180px;height:180px;">
-                <p class="precio-producto">$75.000</p>
+                <article class="precio-producto">$75.000</article>
             </div>
             <div class="card-item-accesorio">
-                <p class="marca-producto">Copas</p>
+                <p class="marca-producto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Copas</p>
                 <p class="descripcion-producto descripcion-accesorio">Copas de cristal para vino tinto blanco, blanco, espumante, agua y degustación. Juego de 6 copas de cada tipo.
                 </p>
                 <img class="img-producto" src="../imagenes/Accesorio-Copas.jpeg" alt="Copas de Cristal" style="width:200px;height:100px;">
-                <p class="precio-producto">$210.000</p>
+                <article class="precio-producto">$210.000</article>
             </div>
             <div class="card-item-accesorio">
-                <p class="marca-producto">Sacacorchos</p>
+                <p class="marca-producto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Sacacorchos</p>
                 <p class="descripcion-producto descripcion-accesorio">Sacacorchos de dos tiempos.
                 </p>
                 <img class="img-producto" src="../imagenes/Accesorio-Sacacorchos.jpeg" alt="Sacacorchos" style="width:100px;height:100px;">
-                <p class="precio-producto">$15.000</p>
+                <article class="precio-producto">$15.000</article>
             </div>
             <div class="card-item-accesorio">
-                <p class="marca-producto">Enfriador</p>
+                <p class="marca-producto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Enfriador</p>
                 <p class="descripcion-producto descripcion-accesorio">Refrigerante para botellas.
                 </p>
                 <img class="img-producto" src="../imagenes/Accesorio-Enfriador.jpeg" alt="Enfriador de botellas" style="width:120px;height:200px;">
-                <p class="precio-producto">$35.000</p>
+                <article class="precio-producto">$35.000</article>
             </div>
         </section>
     </main>
@@ -98,6 +100,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
 </body>
 </html>
