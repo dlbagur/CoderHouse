@@ -38,22 +38,17 @@
         width: auto;
     }
     .tipo-vino {
-        font-size: map-get($font-medidas , m);    
+        font-size: map-get($font-medidas , xl);    
     }
     .marca-producto {
-        font-size: map-get($font-medidas , sm);
+        font-size: map-get($font-medidas , m);
     }
     .descripcion-producto {
-        font-size: 16px;
-    }
-    .img-producto {
-        width: 50%;
+        font-size: map-get($font-medidas , m);
+        margin-left: 20px;
     }
     .precio-producto {
-        padding: 10px;
-        font-size: 18px;
-    }
-    .descripcion-producto {
+        margin-left: 50px;
         font-size: map-get($font-medidas , m);
     }
     .card-item-accesorio {

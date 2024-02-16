@@ -28,28 +28,30 @@
         "marca-producto descripcion-producto" 
         "img-producto precio-producto";
     }
-    .img-tipo-vino {
-        width: 10%;
-    }
+    // .img-tipo-vino {
+    //     width: 10%;
+    // }
     .tipo-vino {
-        font-size: map-get($font-medidas , m);
+        font-size: map-get($font-medidas , xl);
         padding: 10px;
     }
     .marca-producto {
-        font-size: map-get($font-medidas , m);
+        font-size: map-get($font-medidas , l);
     }
     .descripcion-producto {
-        font-size: 12px;
+        font-size: map-get($font-medidas , l);
     }
     .img-producto {
         width: 60%;
     }
     .precio-producto {
         padding: 10px;
-        font-size: 18px;
+        font-size: map-get($font-medidas , l);
     }
-    .descripcion-producto {
-        font-size: map-get($font-medidas , m);
+    /* Accesorios */
+    .card-container-accesorios {
+        margin: 1px;
+        padding: 5px;
     }
     .card-item-accesorio {
         margin: 5px;
@@ -62,6 +64,7 @@
     .descripcion-accesorio {
         font-size: map-get($font-medidas , l);
     }
+    /* Footer */
     .pie-grid-container {
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 

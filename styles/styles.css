@@ -147,9 +147,9 @@ p {
 /* Grilla de Vinos y Accesorios */
 /* Vinos Tipos */
 .card-container-vino, .card-container-accesorios {
-  width: 50%;
-  max-width: 50%;
-  margin-top: 30px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 10px;
   margin-left: 50px;
   flex-direction: row;
   display: flex;
@@ -225,6 +225,12 @@ p {
 
 /* Accesorios */
 /* ACCESORIOS */
+.card-container-accesorios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .card-item-accesorio {
   grid-template-columns: 400px 400px 400px 400px;
 }
@@ -441,6 +447,7 @@ p {
   }
   .precio-producto {
     font-size: 28px;
+    margin-left: 30px;
   }
   /* Accesorios */
   .card-item-accesorio {
@@ -532,28 +539,27 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "marca-producto descripcion-producto" "img-producto precio-producto";
   }
-  .img-tipo-vino, .img-tipo-accesorio {
-    width: 10%;
-  }
   .tipo-vino, .tipo-accesorio {
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px;
   }
   .marca-producto {
-    font-size: 20px;
+    font-size: 25px;
   }
   .descripcion-producto {
-    font-size: 12px;
+    font-size: 25px;
   }
   .img-producto {
     width: 60%;
   }
   .precio-producto {
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
   }
-  .descripcion-producto {
-    font-size: 20px;
+  /* Accesorios */
+  .card-container-accesorios {
+    margin: 1px;
+    padding: 5px;
   }
   .card-item-accesorio {
     margin: 5px;
@@ -564,6 +570,7 @@ p {
   .descripcion-accesorio {
     font-size: 25px;
   }
+  /* Footer */
   .pie-grid-container {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "empresa" "celular" "mail" "copy-right";
@@ -604,22 +611,17 @@ p {
     width: auto;
   }
   .tipo-vino, .tipo-accesorio {
-    font-size: 20px;
+    font-size: 30px;
   }
   .marca-producto {
-    font-size: 18px;
+    font-size: 20px;
   }
   .descripcion-producto {
-    font-size: 16px;
-  }
-  .img-producto {
-    width: 50%;
+    font-size: 20px;
+    margin-left: 20px;
   }
   .precio-producto {
-    padding: 10px;
-    font-size: 18px;
-  }
-  .descripcion-producto {
+    margin-left: 50px;
     font-size: 20px;
   }
   .card-item-accesorio {

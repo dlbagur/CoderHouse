@@ -1,6 +1,9 @@
 /* ACCESORIOS */
 .card-container-accesorios {
     @extend .card-container-vino;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .card-item-accesorio {
     @extend .card-item-vino;
