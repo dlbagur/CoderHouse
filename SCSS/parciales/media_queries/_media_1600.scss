@@ -25,11 +25,11 @@
         grid-template-columns: repeat(2,auto);
     }
     .card-container-vino {
-        width: 100%;
+        width: 90%;
         padding: 30px 10px 10px 10px;
     }
     .card-item-vino {
-        width: 100%;
+        width: 90%;
         margin: 10px;
         grid-template-columns: 20% 60% 10% 10%;
         grid-template-rows: auto;
@@ -46,14 +46,14 @@
         padding: 10px;
     }
     .img-producto {
-        width: 100%;
+        width: 60%;
     }
     .precio-producto {
         font-size: map-get($font-medidas , xl);
     }
     /* Accesorios */
     .card-item-accesorio {
-        width: 100%;
+        width: 90%;
         margin: 10px;
         grid-template-columns: 20% 30% 30% 20%;
         grid-template-rows: auto;

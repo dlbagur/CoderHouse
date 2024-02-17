@@ -48,7 +48,7 @@
         margin-left: 20px;
     }
     .precio-producto {
-        margin-left: 50px;
+        margin-left: 5px;
         font-size: map-get($font-medidas , m);
     }
     .card-item-accesorio {
@@ -58,6 +58,7 @@
         "marca-producto descripcion-producto" 
         "img-producto precio-producto";
         }
+    /* Footer */
     .pie-grid-container {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: auto;
@@ -68,6 +69,7 @@
             "mail"
             "copy-right";
     }
+    /* Form Registro */ 
     .form-registro {
         width: 280px;
         padding: 10px;

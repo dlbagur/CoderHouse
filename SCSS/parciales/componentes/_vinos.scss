@@ -1,8 +1,8 @@
 /* Grilla de Vinos y Accesorios */
 /* Vinos Tipos */
 .card-container-vino {
-    width: 100%;
-    max-width: 100%;
+    width: 60%;
+    max-width: 60%;
     margin-top: 10px;
     margin-left: 50px;
     flex-direction: row;
@@ -12,7 +12,7 @@
 }
 .img-tipo-vino {
     border-radius: 50%;
-    width: 100%;
+    width: 90%;
     border: solid 1px black;
 }
 .tipo-vino {
@@ -25,7 +25,7 @@
 
 /* Vinos Detalle */
 .card-item-vino {
-    width: 100%;
+    width: 90%;
     max-width: 90%;
     margin: 5px;
     display: grid;
@@ -63,6 +63,7 @@
     }
 }
 .precio-producto {
+    width: 80%;
     font-family: whisper;
     font-size: map-get($font-medidas , xl);
     font-weight: bold;

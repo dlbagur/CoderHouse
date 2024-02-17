@@ -147,8 +147,8 @@ p {
 /* Grilla de Vinos y Accesorios */
 /* Vinos Tipos */
 .card-container-vino, .card-container-accesorios {
-  width: 100%;
-  max-width: 100%;
+  width: 60%;
+  max-width: 60%;
   margin-top: 10px;
   margin-left: 50px;
   flex-direction: row;
@@ -159,7 +159,7 @@ p {
 
 .img-tipo-vino, .img-tipo-accesorio {
   border-radius: 50%;
-  width: 100%;
+  width: 90%;
   border: solid 1px black;
 }
 
@@ -173,7 +173,7 @@ p {
 
 /* Vinos Detalle */
 .card-item-vino, .card-item-accesorio {
-  width: 100%;
+  width: 90%;
   max-width: 90%;
   margin: 5px;
   display: grid;
@@ -214,6 +214,7 @@ p {
 }
 
 .precio-producto {
+  width: 80%;
   font-family: whisper;
   font-size: 30px;
   font-weight: bold;
@@ -363,11 +364,11 @@ p {
     grid-template-columns: repeat(2, auto);
   }
   .card-container-vino, .card-container-accesorios {
-    width: 100%;
+    width: 90%;
     padding: 30px 10px 10px 10px;
   }
   .card-item-vino, .card-item-accesorio {
-    width: 100%;
+    width: 90%;
     margin: 10px;
     grid-template-columns: 20% 60% 10% 10%;
     grid-template-rows: auto;
@@ -384,14 +385,14 @@ p {
     padding: 10px;
   }
   .img-producto {
-    width: 100%;
+    width: 60%;
   }
   .precio-producto {
     font-size: 30px;
   }
   /* Accesorios */
   .card-item-accesorio {
-    width: 100%;
+    width: 90%;
     margin: 10px;
     grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: auto;
@@ -495,11 +496,14 @@ p {
     margin: 5px;
     grid-template-columns: 20% 55% 15% 10%;
     grid-gap: 2px;
-    padding: 5px;
+  }
+  .precio-producto {
+    font-size: 25px;
+    margin-left: 5px;
   }
   /* Accesorios */
   .card-item-accesorio {
-    width: 100%;
+    width: 90%;
     margin: 10px;
     grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: auto;
@@ -621,7 +625,7 @@ p {
     margin-left: 20px;
   }
   .precio-producto {
-    margin-left: 50px;
+    margin-left: 5px;
     font-size: 20px;
   }
   .card-item-accesorio {
@@ -629,12 +633,14 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "marca-producto descripcion-producto" "img-producto precio-producto";
   }
+  /* Footer */
   .pie-grid-container {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "empresa" "celular" "mail" "copy-right";
   }
+  /* Form Registro */
   .form-registro {
     width: 280px;
     padding: 10px;
@@ -658,6 +664,34 @@ p {
     font-size: 15px;
   }
   /* FIN FORMULARIO */
+}
+/* MEDIA */
+@media (max-width: 410px) {
+  /* Vinos */
+  .card-container-vino, .card-container-accesorios {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .card-item-vino, .card-item-accesorio {
+    width: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat 4, 1fr;
+    grid-template-areas: "marca-producto" "descripcion-producto" "img-producto" "precio-producto";
+  }
+  .img-tipo-vino, .img-tipo-accesorio {
+    width: 150px;
+    height: 150px;
+  }
+  .tipo-vino, .tipo-accesorio {
+    font-size: 25px;
+  }
+  .img-producto {
+    width: 50%;
+  }
+  .precio-producto {
+    width: 50%;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

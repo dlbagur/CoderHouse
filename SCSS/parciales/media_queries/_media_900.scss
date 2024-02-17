@@ -36,11 +36,14 @@
         margin: 5px;
         grid-template-columns: 20% 55% 15% 10%;
         grid-gap: 2px;
-        padding: 5px;
+    }
+    .precio-producto {
+        font-size: map-get($font-medidas , l);
+        margin-left: 5px;
     }
     /* Accesorios */
     .card-item-accesorio {
-        width: 100%;
+        width: 90%;
         margin: 10px;
         grid-template-columns: 20% 30% 30% 20%;
         grid-template-rows: auto;
